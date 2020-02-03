@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gebelik Hesaplama">
+    <meta name="keywords" content="gebelik hesaplama, gebelik haftası hesaplama, hamilelik hesaplama, hamilelik hesaplaması, doğum hesaplama, gebelik hesaplama cetveli, doğum tarihi hesaplama, hamilelik hesaplama otomatik, hamilelik haftası hesaplama">
+    <meta name="author" content="Hesap Uzmanı">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gebelik Hesaplama</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="img/gebelik-hesaplama.png" type="image/png">
+
+
+    <script src="js/jquery_ui.js"></script>
+    <link rel="stylesheet" href="css/jquery_ui.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <div class="row-fluid">
+            <div id="mainwrapper">
+                <div class="col-lg-7">
+
+                    <div id="datepicker-container">
+                        <div id="datepicker-center">
+                            <div id="datepicker"></div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-info">Tahmini Doğum Tarihini Hesapla</button>
+
+                    <div class="panel panel-success">
+                        <div class="panel-heading">Hamileliğiniz Hakkında Bilgi</div>
+                        <!--Status-->
+                        <div class="panel-body statusli"><p class="negro status"></p></div>
+                        <!--Status-->
+                    </div>
+
+                    <ul class="list-group">
+                        <li class="list-group-item recommendationli">
+                            <!--Recommendation-->
+                            <p class="recommendation" class="negro"></p>
+                            <!--Recommendation-->
+                        </li>
+                        <li class="list-group-item fppli">
+                            <!--Fecha probable de parto-->
+                            <p class="negro fpp"></p>
+                            <!--Fecha probable de parto-->
+                        </li>
+                        <li class="list-group-item pgbarli">
+                            <!--Progress bar-->
+                            <div class="pgbar-container">
+                              <div class="pgbar">
+                                <div class="pgbartext"></div>
+                            </div>
+                            <!--Progress bar-->
+                        </li>
+                        <li class="list-group-item actualstateli">
+                            <!--Cuanto pasó + Cuanto falta-->
+                            <p class="negro actualstate"></p>
+                            <!--Cuanto pasó + Cuanto falta-->
+                        </li>
+                        <li class="list-group-item actualmonthli">
+                            <!--Mes-->
+                            <p class="negro actualmonth"></p>
+                            <!--Mes-->
+                        </li>
+                        <li class="list-group-item actualtrimesterli">
+                            <!--Trimestre-->
+                            <p class="negro actualtrimester"></p>
+                            <!--Trimestre-->
+                        </li>
+                    </ul>
+
+                </div><!-- col-lg-7 -->
+
+
+    <div class="col-lg-5">
+            <div id="list-container">
+                    <div id="list-center">
+                        <ul class="week-list-calculator">
+                            <li class="pregweek">
+                                <p class="trim">1'inci Trimester</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="trim">2'nci Trimester</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="trim">3'üncü Trimester</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i3">3</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i14">14</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i28">28</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i4">4</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i15">15</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i29">29</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i5">5</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i16">16</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i30">30</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i6">6</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i17">17</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i31">31</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i7">7</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i18">18</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i32">32</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i8">8</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i19">19</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i33">33</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i9">9</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i20">20</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i34">34</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i10">10</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i21">21</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i35">35</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i11">11</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i22">22</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i36">36</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i12">12</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i23">23</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i37">37</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i13">13</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i24">24</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i38">38</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="bwhite"></p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i25">25</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i39">39</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="bwhite"></p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i26">26</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i40">40</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="bwhite"></p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="normal i27">27</p>
+                            </li>
+                            <li class="pregweek">
+                                <p class="bwhite"></p>
+                            </li>
+
+                        </ul>
+                    </div><!-- list-center -->
+                </div><!-- list-container -->
+            </div><!-- col-lg-5 -->
+        </div><!-- main-wrapper -->
+    </div><!-- row-fluid -->
+
+    <script src="bundle.js"></script>
+
+</body>
+
+</html>
