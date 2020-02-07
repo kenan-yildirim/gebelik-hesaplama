@@ -79,13 +79,14 @@ li p.trim{ padding-bottom: 65px !important; height: 40px !important; width: 40px
 .panel-success>.panel-heading {color: black; background-color: greenyellow; border-color: #d6e9c6;}
 
 .pgbar-container{
-    width:100%;
+    width:75%;
     position:relative;
     height:3em;
     background-color:#e8b0c2 !important;
     border-radius: 5px !important;
     border: 2px solid !important;
     border-color:black !important;
+    margin-left: 10%;
 }
 
 .pgbar{
